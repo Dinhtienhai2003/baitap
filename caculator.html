@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/type.js"></script>
+    <title>Calculator</title>
+    <style>
+        .red-button {
+            background-color: rgb(255, 221, 3);
+            color: rgb(10, 10, 10);
+        }
+
+        .gray-button {
+            background-color: rgb(156, 153, 153);
+            color: rgb(8, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="screen">
+            <h2 class="content"></h2>
+        </div>
+        <div class="form-group">
+            <button class="gray-button" onclick="add('%')">%</button>
+            <button class="gray-button">CE</button>
+            <button class="gray-button" onclick="clearAll()">C</button>
+            <button class="red-button" onclick="remove()">⌫</button>
+            <button class="gray-button">1/x</button>
+            <button class="gray-button">x^2</button>
+            <button class="gray-button">√x</button>
+            <button class="red-button" onclick="addMath(':','/')">/</button>
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button class="red-button" black onclick="addMath('x','*')">x</button>
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button class="red-button" onclick="add('-')">-</button>
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button class="red-button" onclick="add('+')">+</button>
+            <button  onclick="add('.')">.</button>
+            <button  style="width: 150px;" onclick="add(0)">0</button>
+            <button class="red-button" style="width: 150px;" onclick="calculator()">=</button>
+        </div>
+    </div>
+</body>
+</html>
